@@ -35,7 +35,6 @@ class Song
 
   def self.find_or_create_by_name(find_this_song)
     self.find_by_name(find_this_song) || self.create_by_name(find_this_song)
-
   end
 
   def self.alphabetical()
@@ -60,8 +59,4 @@ class Song
  def self.destroy_all()
    @@all.clear
  end
-
-
-
-
 end
